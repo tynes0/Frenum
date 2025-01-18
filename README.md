@@ -89,7 +89,7 @@ You can use `MakeFrenum` to register an already defined enum:
 ```cpp
 enum LegacyEnum { OldValue1 = 1, OldValue2, OldValue3 };
 
-MakeFrenum(LegacyEnum, OldValue1 = 1, OldValue2, OldValue3);
+MakeFrenum(LegacyEnum, OldValue1, OldValue2, OldValue3);
 
 int main() {
     std::cout << frenum::to_string(LegacyEnum::OldValue2) << std::endl; // Output: "OldValue2"
